@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee database</title>
+</head>
+<body>
+<div class="container">
+<table>
+    <thead>
+    <tr>
+        <th>empno</th>
+        <th>name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student : ${listemp}">
+        <td th:text="${student.empno}"></td>
+        <td th:text="${student.name}"></td>
+
+    </tbody>
+</table>
+</div>
+</body>
+</html>
